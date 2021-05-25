@@ -1,125 +1,176 @@
-2021-05-21 11:36:00.057  INFO 55801 --- [main] com.example.demo.Employee_Central_App    : Starting Employee_Central_App using Java 15.0.2 on Dipendus-MacBook-Air.local with PID 55801 (/Users/dipendubendale/git/repository/EmployeeRepo/Employee_Central_App/target/classes started by dipendubendale in /Users/dipendubendale/git/repository/EmployeeRepo/Employee_Central_App)
-2021-05-21 11:36:00.066  INFO 55801 --- [main] com.example.demo.Employee_Central_App    : No active profile set, falling back to default profiles: default
-2021-05-21 11:36:01.374  INFO 55801 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Cassandra repositories in DEFAULT mode.
-2021-05-21 11:36:01.445  INFO 55801 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 0 Reactive Cassandra repository interfaces.
-2021-05-21 11:36:01.451  INFO 55801 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Cassandra repositories in DEFAULT mode.
-2021-05-21 11:36:01.493  INFO 55801 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 Cassandra repository interfaces.
-2021-05-21 11:36:02.254  INFO 55801 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-05-21 11:36:02.279  INFO 55801 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-05-21 11:36:02.280  INFO 55801 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-05-21 11:36:02.471  INFO 55801 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-05-21 11:36:02.472  INFO 55801 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2279 ms
-2021-05-21 11:36:03.076  INFO 55801 --- [main] c.d.o.d.internal.core.ContactPoints      : Contact point localhost:9042 resolves to multiple addresses, will use them all ([localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1])
-2021-05-21 11:36:03.450  INFO 55801 --- [main] c.d.o.d.i.core.DefaultMavenCoordinates   : DataStax Java driver for Apache Cassandra(R) (com.datastax.oss:java-driver-core) version 4.9.0
-2021-05-21 11:36:05.269  INFO 55801 --- [s0-admin-0] c.d.oss.driver.internal.core.time.Clock  : Using native clock for microsecond precision
-2021-05-21 11:36:05.747  WARN 55801 --- [s0-admin-1] c.d.o.d.i.c.control.ControlConnection    : [s0] Error connecting to Node(endPoint=localhost/[0:0:0:0:0:0:0:1]:9042, hostId=null, hashCode=67755775), trying next node (ConnectionInitException: [s0|control|connecting...] Protocol initialization request, step 1 (OPTIONS): failed to send request (io.netty.channel.StacklessClosedChannelException))
-2021-05-21 11:36:06.144  WARN 55801 --- [s0-admin-0] c.d.o.d.i.c.l.h.OptionalLocalDcHelper    : [s0|default] You specified datacenter1 as the local DC, but some contact points are from a different DC: Node(endPoint=localhost/[0:0:0:0:0:0:0:1]:9042, hostId=null, hashCode=67755775)=null; please provide the correct local DC, or check your contact points
-2021-05-21 11:36:07.248  INFO 55801 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-05-21 11:36:07.392  INFO 55801 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-21 11:36:07.600  INFO 55801 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-05-21 11:36:07.601  INFO 55801 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-05-21 11:36:07.662  INFO 55801 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-05-21 11:36:07.711  INFO 55801 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-05-21 11:36:07.996  INFO 55801 --- [main] com.example.demo.Employee_Central_App    : Started Employee_Central_App in 8.66 seconds (JVM running for 10.311)
-2021-05-21 11:36:18.799  INFO 55801 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-21 11:36:18.801  INFO 55801 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-05-21 11:36:18.802  INFO 55801 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-05-21 11:36:39.141  WARN 55801 --- [s0-io-4] c.d.o.d.i.core.cql.CqlRequestHandler     : Query '[1 values] SELECT count(name) FROM Employee WHERE name =? ALLOW FILTERING [v0='#name1']' generated server side warning(s): Aggregation query used without partition key
-2021-05-21 11:39:43.761  INFO 55801 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2021-05-21 11:39:43.791  INFO 55801 --- [RMI TCP Connection(13)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-05-21 11:40:07.905  INFO 55843 --- [main] com.example.demo.Employee_Central_App    : Starting Employee_Central_App using Java 15.0.2 on Dipendus-MacBook-Air.local with PID 55843 (/Users/dipendubendale/git/repository/EmployeeRepo/Employee_Central_App/target/classes started by dipendubendale in /Users/dipendubendale/git/repository/EmployeeRepo/Employee_Central_App)
-2021-05-21 11:40:07.911  INFO 55843 --- [main] com.example.demo.Employee_Central_App    : No active profile set, falling back to default profiles: default
-2021-05-21 11:40:09.161  INFO 55843 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Cassandra repositories in DEFAULT mode.
-2021-05-21 11:40:09.213  INFO 55843 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 0 Reactive Cassandra repository interfaces.
-2021-05-21 11:40:09.220  INFO 55843 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Cassandra repositories in DEFAULT mode.
-2021-05-21 11:40:09.249  INFO 55843 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 Cassandra repository interfaces.
-2021-05-21 11:40:09.895  INFO 55843 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-05-21 11:40:09.914  INFO 55843 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-05-21 11:40:09.915  INFO 55843 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-05-21 11:40:10.074  INFO 55843 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-05-21 11:40:10.075  INFO 55843 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2077 ms
-2021-05-21 11:40:10.492  INFO 55843 --- [main] c.d.o.d.internal.core.ContactPoints      : Contact point localhost:9042 resolves to multiple addresses, will use them all ([localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1])
-2021-05-21 11:40:10.759  INFO 55843 --- [main] c.d.o.d.i.core.DefaultMavenCoordinates   : DataStax Java driver for Apache Cassandra(R) (com.datastax.oss:java-driver-core) version 4.9.0
-2021-05-21 11:40:11.960  INFO 55843 --- [s0-admin-0] c.d.oss.driver.internal.core.time.Clock  : Using native clock for microsecond precision
-2021-05-21 11:40:12.289  WARN 55843 --- [s0-admin-1] c.d.o.d.i.c.control.ControlConnection    : [s0] Error connecting to Node(endPoint=localhost/[0:0:0:0:0:0:0:1]:9042, hostId=null, hashCode=5c391d22), trying next node (ConnectionInitException: [s0|control|connecting...] Protocol initialization request, step 1 (OPTIONS): failed to send request (io.netty.channel.StacklessClosedChannelException))
-2021-05-21 11:40:12.731  WARN 55843 --- [s0-admin-0] c.d.o.d.i.c.l.h.OptionalLocalDcHelper    : [s0|default] You specified datacenter1 as the local DC, but some contact points are from a different DC: Node(endPoint=localhost/[0:0:0:0:0:0:0:1]:9042, hostId=null, hashCode=5c391d22)=null; please provide the correct local DC, or check your contact points
-2021-05-21 11:40:13.665  INFO 55843 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-05-21 11:40:13.777  INFO 55843 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-21 11:40:13.955  INFO 55843 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-05-21 11:40:13.956  INFO 55843 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-05-21 11:40:14.009  INFO 55843 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-05-21 11:40:14.039  INFO 55843 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-05-21 11:40:14.282  INFO 55843 --- [main] com.example.demo.Employee_Central_App    : Started Employee_Central_App in 6.943 seconds (JVM running for 8.605)
-2021-05-21 11:40:18.853  INFO 55843 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-21 11:40:18.854  INFO 55843 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-05-21 11:40:18.855  INFO 55843 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-05-21 11:40:35.693  WARN 55843 --- [s0-io-4] c.d.o.d.i.core.cql.CqlRequestHandler     : Query '[1 values] SELECT count(name) FROM Employee WHERE name =? ALLOW FILTERING [v0='@name']' generated server side warning(s): Aggregation query used without partition key
-2021-05-21 12:01:21.522  INFO 55843 --- [RMI TCP Connection(30)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2021-05-21 12:01:21.565  INFO 55843 --- [RMI TCP Connection(30)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-05-21 12:02:32.205  INFO 56033 --- [main] com.example.demo.Employee_Central_App    : Starting Employee_Central_App using Java 15.0.2 on Dipendus-MacBook-Air.local with PID 56033 (/Users/dipendubendale/git/repository/EmployeeRepo/Employee_Central_App/target/classes started by dipendubendale in /Users/dipendubendale/git/repository/EmployeeRepo/Employee_Central_App)
-2021-05-21 12:02:32.211  INFO 56033 --- [main] com.example.demo.Employee_Central_App    : No active profile set, falling back to default profiles: default
-2021-05-21 12:02:33.260  INFO 56033 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Cassandra repositories in DEFAULT mode.
-2021-05-21 12:02:33.322  INFO 56033 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 0 Reactive Cassandra repository interfaces.
-2021-05-21 12:02:33.328  INFO 56033 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Cassandra repositories in DEFAULT mode.
-2021-05-21 12:02:33.352  INFO 56033 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 Cassandra repository interfaces.
-2021-05-21 12:02:33.944  INFO 56033 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-05-21 12:02:33.962  INFO 56033 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-05-21 12:02:33.962  INFO 56033 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-05-21 12:02:34.106  INFO 56033 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-05-21 12:02:34.106  INFO 56033 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1812 ms
-2021-05-21 12:02:34.507  INFO 56033 --- [main] c.d.o.d.internal.core.ContactPoints      : Contact point localhost:9042 resolves to multiple addresses, will use them all ([localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1])
-2021-05-21 12:02:34.797  INFO 56033 --- [main] c.d.o.d.i.core.DefaultMavenCoordinates   : DataStax Java driver for Apache Cassandra(R) (com.datastax.oss:java-driver-core) version 4.9.0
-2021-05-21 12:02:36.079  INFO 56033 --- [s0-admin-0] c.d.oss.driver.internal.core.time.Clock  : Using native clock for microsecond precision
-2021-05-21 12:02:36.345  WARN 56033 --- [s0-admin-1] c.d.o.d.i.c.control.ControlConnection    : [s0] Error connecting to Node(endPoint=localhost/[0:0:0:0:0:0:0:1]:9042, hostId=null, hashCode=3df1c3a4), trying next node (ConnectionInitException: [s0|control|connecting...] Protocol initialization request, step 1 (OPTIONS): failed to send request (io.netty.channel.StacklessClosedChannelException))
-2021-05-21 12:02:36.628  WARN 56033 --- [s0-admin-0] c.d.o.d.i.c.l.h.OptionalLocalDcHelper    : [s0|default] You specified datacenter1 as the local DC, but some contact points are from a different DC: Node(endPoint=localhost/[0:0:0:0:0:0:0:1]:9042, hostId=null, hashCode=3df1c3a4)=null; please provide the correct local DC, or check your contact points
-2021-05-21 12:02:37.562  INFO 56033 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-05-21 12:02:37.686  INFO 56033 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-21 12:02:37.847  INFO 56033 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-05-21 12:02:37.849  INFO 56033 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-05-21 12:02:37.899  INFO 56033 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-05-21 12:02:37.933  INFO 56033 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-05-21 12:02:38.144  INFO 56033 --- [main] com.example.demo.Employee_Central_App    : Started Employee_Central_App in 6.401 seconds (JVM running for 7.595)
-2021-05-21 12:02:43.934  INFO 56033 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-21 12:02:43.935  INFO 56033 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-05-21 12:02:43.937  INFO 56033 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2021-05-21 12:02:44.154  WARN 56033 --- [s0-io-4] c.d.o.d.i.core.cql.CqlRequestHandler     : Query '[1 values] SELECT count(name) FROM Employee WHERE name =? ALLOW FILTERING [v0='@name']' generated server side warning(s): Aggregation query used without partition key
-2021-05-21 12:02:44.156  INFO 56033 --- [http-nio-8080-exec-1] c.e.demo.service.EmployeeServiceImpl     : start name with alphabet
-2021-05-21 12:02:53.205  WARN 56033 --- [s0-io-4] c.d.o.d.i.core.cql.CqlRequestHandler     : Query '[1 values] SELECT count(name) FROM Employee WHERE name =? ALLOW FILTERING [v0='name#']' generated server side warning(s): Aggregation query used without partition key
-2021-05-21 12:02:53.205  INFO 56033 --- [http-nio-8080-exec-2] c.e.demo.service.EmployeeServiceImpl     : start name with alphabet
-2021-05-21 12:02:57.883  WARN 56033 --- [s0-io-4] c.d.o.d.i.core.cql.CqlRequestHandler     : Query '[1 values] SELECT count(name) FROM Employee WHERE name =? ALLOW FILTERING [v0='name66']' generated server side warning(s): Aggregation query used without partition key
-2021-05-21 12:05:55.227  INFO 56033 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2021-05-21 12:05:55.256  INFO 56033 --- [RMI TCP Connection(14)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2021-05-21 12:20:54.862  INFO 56189 --- [main] com.example.demo.Employee_Central_App    : Starting Employee_Central_App using Java 15.0.2 on Dipendus-MacBook-Air.local with PID 56189 (/Users/dipendubendale/git/repository/EmployeeRepo/Employee_Central_App/target/classes started by dipendubendale in /Users/dipendubendale/git/repository/EmployeeRepo/Employee_Central_App)
-2021-05-21 12:20:54.872  INFO 56189 --- [main] com.example.demo.Employee_Central_App    : No active profile set, falling back to default profiles: default
-2021-05-21 12:20:56.711  INFO 56189 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Cassandra repositories in DEFAULT mode.
-2021-05-21 12:20:56.780  INFO 56189 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 0 Reactive Cassandra repository interfaces.
-2021-05-21 12:20:56.788  INFO 56189 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Cassandra repositories in DEFAULT mode.
-2021-05-21 12:20:56.886  INFO 56189 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 1 Cassandra repository interfaces.
-2021-05-21 12:20:57.875  INFO 56189 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-05-21 12:20:57.897  INFO 56189 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-05-21 12:20:57.898  INFO 56189 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
-2021-05-21 12:20:58.187  INFO 56189 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-05-21 12:20:58.188  INFO 56189 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3171 ms
-2021-05-21 12:20:58.757  INFO 56189 --- [main] c.d.o.d.internal.core.ContactPoints      : Contact point localhost:9042 resolves to multiple addresses, will use them all ([localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1])
-2021-05-21 12:20:59.188  INFO 56189 --- [main] c.d.o.d.i.core.DefaultMavenCoordinates   : DataStax Java driver for Apache Cassandra(R) (com.datastax.oss:java-driver-core) version 4.9.0
-2021-05-21 12:21:00.715  INFO 56189 --- [s0-admin-0] c.d.oss.driver.internal.core.time.Clock  : Using native clock for microsecond precision
-2021-05-21 12:21:00.991  WARN 56189 --- [s0-admin-1] c.d.o.d.i.c.control.ControlConnection    : [s0] Error connecting to Node(endPoint=localhost/[0:0:0:0:0:0:0:1]:9042, hostId=null, hashCode=7dc7eb00), trying next node (ConnectionInitException: [s0|control|connecting...] Protocol initialization request, step 1 (OPTIONS): failed to send request (io.netty.channel.StacklessClosedChannelException))
-2021-05-21 12:21:01.355  WARN 56189 --- [s0-admin-0] c.d.o.d.i.c.l.h.OptionalLocalDcHelper    : [s0|default] You specified datacenter1 as the local DC, but some contact points are from a different DC: Node(endPoint=localhost/[0:0:0:0:0:0:0:1]:9042, hostId=null, hashCode=7dc7eb00)=null; please provide the correct local DC, or check your contact points
-2021-05-21 12:21:02.625  INFO 56189 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-05-21 12:21:02.780  INFO 56189 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2021-05-21 12:21:02.993  INFO 56189 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-05-21 12:21:02.994  INFO 56189 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
-2021-05-21 12:21:03.045  INFO 56189 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
-2021-05-21 12:21:03.106  INFO 56189 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
-2021-05-21 12:21:03.425  INFO 56189 --- [main] com.example.demo.Employee_Central_App    : Started Employee_Central_App in 9.672 seconds (JVM running for 11.824)
-2021-05-21 12:21:52.453  INFO 56189 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-05-21 12:21:52.455  INFO 56189 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-05-21 12:21:52.457  INFO 56189 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2021-05-21 12:22:01.136  WARN 56189 --- [s0-io-4] c.d.o.d.i.core.cql.CqlRequestHandler     : Query '[0 values] SELECT count(1) FROM employee' generated server side warning(s): Aggregation query used without partition key
-2021-05-21 12:22:29.712  WARN 56189 --- [s0-io-4] c.d.o.d.i.core.cql.CqlRequestHandler     : Query '[1 values] SELECT count(name) FROM Employee WHERE name =? ALLOW FILTERING [v0='dipendu']' generated server side warning(s): Aggregation query used without partition key
-2021-05-21 12:22:29.714  INFO 56189 --- [http-nio-8080-exec-7] c.e.demo.service.EmployeeServiceImpl     : name already exist
-2021-05-21 12:22:38.344  WARN 56189 --- [s0-io-4] c.d.o.d.i.core.cql.CqlRequestHandler     : Query '[1 values] SELECT count(name) FROM Employee WHERE name =? ALLOW FILTERING [v0='dip']' generated server side warning(s): Aggregation query used without partition key
-2021-05-21 12:22:43.947  INFO 56189 --- [http-nio-8080-exec-9] c.e.demo.service.EmployeeServiceImpl     : name already exist
-2021-05-21 12:22:43.947  WARN 56189 --- [s0-io-4] c.d.o.d.i.core.cql.CqlRequestHandler     : Query '[1 values] SELECT count(name) FROM Employee WHERE name =? ALLOW FILTERING [v0='dip']' generated server side warning(s): Aggregation query used without partition key
-2021-05-21 14:09:59.389  INFO 56189 --- [RMI TCP Connection(118)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2021-05-21 14:09:59.429  INFO 56189 --- [RMI TCP Connection(118)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-25 10:56:16.732  INFO 25151 --- [main] com.example.demo.Employee_Central_App    : Starting Employee_Central_App using Java 15.0.2 on Dipendus-MacBook-Air.local with PID 25151 (/Users/dipendubendale/git/DummyProject/Employee_Central_App/target/classes started by dipendubendale in /Users/dipendubendale/git/DummyProject/Employee_Central_App)
+2021-05-25 10:56:16.740  INFO 25151 --- [main] com.example.demo.Employee_Central_App    : No active profile set, falling back to default profiles: default
+2021-05-25 10:56:17.723  INFO 25151 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Cassandra repositories in DEFAULT mode.
+2021-05-25 10:56:17.759  INFO 25151 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 0 Reactive Cassandra repository interfaces.
+2021-05-25 10:56:17.763  INFO 25151 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Cassandra repositories in DEFAULT mode.
+2021-05-25 10:56:17.786  INFO 25151 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 1 Cassandra repository interfaces.
+2021-05-25 10:56:18.257  INFO 25151 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-25 10:56:18.270  INFO 25151 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-25 10:56:18.270  INFO 25151 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-25 10:56:18.395  INFO 25151 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-25 10:56:18.396  INFO 25151 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1562 ms
+2021-05-25 10:56:18.782  INFO 25151 --- [main] c.d.o.d.internal.core.ContactPoints      : Contact point localhost:9042 resolves to multiple addresses, will use them all ([localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1])
+2021-05-25 10:56:18.981  INFO 25151 --- [main] c.d.o.d.i.core.DefaultMavenCoordinates   : DataStax Java driver for Apache Cassandra(R) (com.datastax.oss:java-driver-core) version 4.9.0
+2021-05-25 10:56:19.968  INFO 25151 --- [s0-admin-0] c.d.oss.driver.internal.core.time.Clock  : Using native clock for microsecond precision
+2021-05-25 10:56:20.169  WARN 25151 --- [s0-admin-1] c.d.o.d.i.c.control.ControlConnection    : [s0] Error connecting to Node(endPoint=localhost/[0:0:0:0:0:0:0:1]:9042, hostId=null, hashCode=18fdbaf7), trying next node (ConnectionInitException: [s0|control|connecting...] Protocol initialization request, step 1 (OPTIONS): failed to send request (io.netty.channel.StacklessClosedChannelException))
+2021-05-25 10:56:20.535  WARN 25151 --- [s0-admin-0] c.d.o.d.i.c.l.h.OptionalLocalDcHelper    : [s0|default] You specified datacenter1 as the local DC, but some contact points are from a different DC: Node(endPoint=localhost/[0:0:0:0:0:0:0:1]:9042, hostId=null, hashCode=18fdbaf7)=null; please provide the correct local DC, or check your contact points
+2021-05-25 10:56:21.244  INFO 25151 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-25 10:56:21.367  INFO 25151 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7097d921, org.springframework.security.web.context.SecurityContextPersistenceFilter@67d180e4, org.springframework.security.web.header.HeaderWriterFilter@119f072c, org.springframework.security.web.authentication.logout.LogoutFilter@127d2aee, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6ca367aa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1293f8d7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b6ee447, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a21cbe7, org.springframework.security.web.session.SessionManagementFilter@7096d451, org.springframework.security.web.access.ExceptionTranslationFilter@147375b3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@23c00420]
+2021-05-25 10:56:21.449  INFO 25151 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-25 10:56:21.636  INFO 25151 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-25 10:56:21.638  INFO 25151 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-25 10:56:21.674  INFO 25151 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-25 10:56:21.703  INFO 25151 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-25 10:56:21.890  INFO 25151 --- [main] com.example.demo.Employee_Central_App    : Started Employee_Central_App in 5.618 seconds (JVM running for 6.912)
+2021-05-25 10:56:34.418  INFO 25151 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-25 10:56:34.419  INFO 25151 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-25 10:56:34.421  INFO 25151 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-05-25 10:57:42.208  INFO 25151 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-05-25 10:57:42.232  INFO 25151 --- [RMI TCP Connection(11)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-25 10:57:50.037  INFO 25175 --- [main] com.example.demo.Employee_Central_App    : Starting Employee_Central_App using Java 15.0.2 on Dipendus-MacBook-Air.local with PID 25175 (/Users/dipendubendale/git/DummyProject/Employee_Central_App/target/classes started by dipendubendale in /Users/dipendubendale/git/DummyProject/Employee_Central_App)
+2021-05-25 10:57:50.042  INFO 25175 --- [main] com.example.demo.Employee_Central_App    : No active profile set, falling back to default profiles: default
+2021-05-25 10:57:51.015  INFO 25175 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Cassandra repositories in DEFAULT mode.
+2021-05-25 10:57:51.052  INFO 25175 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 0 Reactive Cassandra repository interfaces.
+2021-05-25 10:57:51.056  INFO 25175 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Cassandra repositories in DEFAULT mode.
+2021-05-25 10:57:51.080  INFO 25175 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 1 Cassandra repository interfaces.
+2021-05-25 10:57:51.568  INFO 25175 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-25 10:57:51.581  INFO 25175 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-25 10:57:51.582  INFO 25175 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-25 10:57:51.708  INFO 25175 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-25 10:57:51.709  INFO 25175 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1601 ms
+2021-05-25 10:57:52.104  INFO 25175 --- [main] c.d.o.d.internal.core.ContactPoints      : Contact point localhost:9042 resolves to multiple addresses, will use them all ([localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1])
+2021-05-25 10:57:52.297  INFO 25175 --- [main] c.d.o.d.i.core.DefaultMavenCoordinates   : DataStax Java driver for Apache Cassandra(R) (com.datastax.oss:java-driver-core) version 4.9.0
+2021-05-25 10:57:53.551  INFO 25175 --- [s0-admin-0] c.d.oss.driver.internal.core.time.Clock  : Using native clock for microsecond precision
+2021-05-25 10:57:54.006  WARN 25175 --- [s0-admin-0] c.d.o.d.i.c.l.h.OptionalLocalDcHelper    : [s0|default] You specified datacenter1 as the local DC, but some contact points are from a different DC: Node(endPoint=localhost/[0:0:0:0:0:0:0:1]:9042, hostId=null, hashCode=1cced7e3)=null; please provide the correct local DC, or check your contact points
+2021-05-25 10:57:54.729  INFO 25175 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-25 10:57:54.860  INFO 25175 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7097d921, org.springframework.security.web.context.SecurityContextPersistenceFilter@67d180e4, org.springframework.security.web.header.HeaderWriterFilter@119f072c, org.springframework.security.web.authentication.logout.LogoutFilter@127d2aee, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6ca367aa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1293f8d7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b6ee447, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a21cbe7, org.springframework.security.web.session.SessionManagementFilter@7096d451, org.springframework.security.web.access.ExceptionTranslationFilter@147375b3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@23c00420]
+2021-05-25 10:57:54.957  INFO 25175 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-25 10:57:55.118  INFO 25175 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-25 10:57:55.120  INFO 25175 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-25 10:57:55.155  INFO 25175 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-25 10:57:55.188  INFO 25175 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-25 10:57:55.395  INFO 25175 --- [main] com.example.demo.Employee_Central_App    : Started Employee_Central_App in 5.834 seconds (JVM running for 6.913)
+2021-05-25 10:58:10.302  INFO 25175 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-25 10:58:10.302  INFO 25175 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-25 10:58:10.304  INFO 25175 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-25 11:03:13.135  INFO 25175 --- [RMI TCP Connection(14)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-05-25 11:03:13.170  INFO 25175 --- [RMI TCP Connection(14)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-25 11:03:29.463  INFO 25257 --- [main] com.example.demo.Employee_Central_App    : Starting Employee_Central_App using Java 15.0.2 on Dipendus-MacBook-Air.local with PID 25257 (/Users/dipendubendale/git/DummyProject/Employee_Central_App/target/classes started by dipendubendale in /Users/dipendubendale/git/DummyProject/Employee_Central_App)
+2021-05-25 11:03:29.466  INFO 25257 --- [main] com.example.demo.Employee_Central_App    : No active profile set, falling back to default profiles: default
+2021-05-25 11:03:30.415  INFO 25257 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Cassandra repositories in DEFAULT mode.
+2021-05-25 11:03:30.450  INFO 25257 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 0 Reactive Cassandra repository interfaces.
+2021-05-25 11:03:30.455  INFO 25257 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Cassandra repositories in DEFAULT mode.
+2021-05-25 11:03:30.479  INFO 25257 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 1 Cassandra repository interfaces.
+2021-05-25 11:03:30.966  INFO 25257 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-25 11:03:30.976  INFO 25257 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-25 11:03:30.976  INFO 25257 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-25 11:03:31.098  INFO 25257 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-25 11:03:31.098  INFO 25257 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1560 ms
+2021-05-25 11:03:31.490  INFO 25257 --- [main] c.d.o.d.internal.core.ContactPoints      : Contact point localhost:9042 resolves to multiple addresses, will use them all ([localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1])
+2021-05-25 11:03:31.685  INFO 25257 --- [main] c.d.o.d.i.core.DefaultMavenCoordinates   : DataStax Java driver for Apache Cassandra(R) (com.datastax.oss:java-driver-core) version 4.9.0
+2021-05-25 11:03:32.607  INFO 25257 --- [s0-admin-0] c.d.oss.driver.internal.core.time.Clock  : Using native clock for microsecond precision
+2021-05-25 11:03:32.827  WARN 25257 --- [s0-admin-1] c.d.o.d.i.c.control.ControlConnection    : [s0] Error connecting to Node(endPoint=localhost/[0:0:0:0:0:0:0:1]:9042, hostId=null, hashCode=23929be6), trying next node (ConnectionInitException: [s0|control|connecting...] Protocol initialization request, step 1 (OPTIONS): failed to send request (io.netty.channel.StacklessClosedChannelException))
+2021-05-25 11:03:33.131  WARN 25257 --- [s0-admin-0] c.d.o.d.i.c.l.h.OptionalLocalDcHelper    : [s0|default] You specified datacenter1 as the local DC, but some contact points are from a different DC: Node(endPoint=localhost/[0:0:0:0:0:0:0:1]:9042, hostId=null, hashCode=23929be6)=null; please provide the correct local DC, or check your contact points
+2021-05-25 11:03:33.852  INFO 25257 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-25 11:03:33.982  INFO 25257 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@684a802a, org.springframework.security.web.context.SecurityContextPersistenceFilter@3f033664, org.springframework.security.web.header.HeaderWriterFilter@6f785a27, org.springframework.security.web.authentication.logout.LogoutFilter@11a67420, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@352e4b6d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@70cd122, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6843fdc4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b5c9412, org.springframework.security.web.session.SessionManagementFilter@45451333, org.springframework.security.web.access.ExceptionTranslationFilter@1203d787, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17d19538]
+2021-05-25 11:03:34.064  INFO 25257 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-25 11:03:34.229  INFO 25257 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-25 11:03:34.230  INFO 25257 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-25 11:03:34.266  INFO 25257 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-25 11:03:34.305  INFO 25257 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-25 11:03:34.495  INFO 25257 --- [main] com.example.demo.Employee_Central_App    : Started Employee_Central_App in 5.479 seconds (JVM running for 6.687)
+2021-05-25 11:03:37.986  INFO 25257 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-25 11:03:37.987  INFO 25257 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-25 11:03:37.988  INFO 25257 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-25 11:03:43.074 ERROR 25257 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:254) ~[spring-security-core-5.4.6.jar:5.4.6]
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:202) ~[spring-security-core-5.4.6.jar:5.4.6]
+	at org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration$LazyPasswordEncoder.matches(AuthenticationConfiguration.java:313) ~[spring-security-config-5.4.6.jar:5.4.6]
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:76) ~[spring-security-core-5.4.6.jar:5.4.6]
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:147) ~[spring-security-core-5.4.6.jar:5.4.6]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:182) ~[spring-security-core-5.4.6.jar:5.4.6]
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:201) ~[spring-security-core-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:155) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:110) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:80) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:336) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:211) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:183) ~[spring-security-web-5.4.6.jar:5.4.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.6.jar:5.3.6]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.45.jar:9.0.45]
+	at java.base/java.lang.Thread.run(Thread.java:832) ~[na:na]
+
+2021-05-25 11:04:52.479  INFO 25257 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-05-25 11:04:52.506  INFO 25257 --- [RMI TCP Connection(10)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-25 11:05:08.467  INFO 25282 --- [main] com.example.demo.Employee_Central_App    : Starting Employee_Central_App using Java 15.0.2 on Dipendus-MacBook-Air.local with PID 25282 (/Users/dipendubendale/git/DummyProject/Employee_Central_App/target/classes started by dipendubendale in /Users/dipendubendale/git/DummyProject/Employee_Central_App)
+2021-05-25 11:05:08.473  INFO 25282 --- [main] com.example.demo.Employee_Central_App    : No active profile set, falling back to default profiles: default
+2021-05-25 11:05:09.727  INFO 25282 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Cassandra repositories in DEFAULT mode.
+2021-05-25 11:05:09.765  INFO 25282 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 0 Reactive Cassandra repository interfaces.
+2021-05-25 11:05:09.769  INFO 25282 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Cassandra repositories in DEFAULT mode.
+2021-05-25 11:05:09.797  INFO 25282 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 Cassandra repository interfaces.
+2021-05-25 11:05:10.309  INFO 25282 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-25 11:05:10.322  INFO 25282 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-25 11:05:10.323  INFO 25282 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.45]
+2021-05-25 11:05:10.497  INFO 25282 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-25 11:05:10.497  INFO 25282 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1927 ms
+2021-05-25 11:05:10.910  INFO 25282 --- [main] c.d.o.d.internal.core.ContactPoints      : Contact point localhost:9042 resolves to multiple addresses, will use them all ([localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1])
+2021-05-25 11:05:11.122  INFO 25282 --- [main] c.d.o.d.i.core.DefaultMavenCoordinates   : DataStax Java driver for Apache Cassandra(R) (com.datastax.oss:java-driver-core) version 4.9.0
+2021-05-25 11:05:12.150  INFO 25282 --- [s0-admin-0] c.d.oss.driver.internal.core.time.Clock  : Using native clock for microsecond precision
+2021-05-25 11:05:12.382  WARN 25282 --- [s0-admin-1] c.d.o.d.i.c.control.ControlConnection    : [s0] Error connecting to Node(endPoint=localhost/[0:0:0:0:0:0:0:1]:9042, hostId=null, hashCode=7c4893a4), trying next node (ConnectionInitException: [s0|control|connecting...] Protocol initialization request, step 1 (OPTIONS): failed to send request (io.netty.channel.StacklessClosedChannelException))
+2021-05-25 11:05:12.629  WARN 25282 --- [s0-admin-0] c.d.o.d.i.c.l.h.OptionalLocalDcHelper    : [s0|default] You specified datacenter1 as the local DC, but some contact points are from a different DC: Node(endPoint=localhost/[0:0:0:0:0:0:0:1]:9042, hostId=null, hashCode=7c4893a4)=null; please provide the correct local DC, or check your contact points
+2021-05-25 11:05:13.490  INFO 25282 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-05-25 11:05:13.632  INFO 25282 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@637d111d, org.springframework.security.web.context.SecurityContextPersistenceFilter@771afdd5, org.springframework.security.web.header.HeaderWriterFilter@79424f25, org.springframework.security.web.authentication.logout.LogoutFilter@7db06c50, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1fd0ae78, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7131d668, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67d180e4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a917017, org.springframework.security.web.session.SessionManagementFilter@69944a90, org.springframework.security.web.access.ExceptionTranslationFilter@6abd8bcd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@cb1c58c]
+2021-05-25 11:05:13.914  INFO 25282 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-25 11:05:14.097  INFO 25282 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-25 11:05:14.099  INFO 25282 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2021-05-25 11:05:14.134  INFO 25282 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2021-05-25 11:05:14.163  INFO 25282 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2021-05-25 11:05:14.365  INFO 25282 --- [main] com.example.demo.Employee_Central_App    : Started Employee_Central_App in 6.503 seconds (JVM running for 7.759)
+2021-05-25 11:05:19.440  INFO 25282 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-25 11:05:19.440  INFO 25282 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-25 11:05:19.441  INFO 25282 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-05-25 11:05:37.952  INFO 25282 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-05-25 11:05:37.977  INFO 25282 --- [RMI TCP Connection(10)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
